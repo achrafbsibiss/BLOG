@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :blogtypes
   resources :posts
+  resources :services
 end

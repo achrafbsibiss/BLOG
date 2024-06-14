@@ -1,0 +1,35 @@
+<section id="services" class="py-8 lg:py-24 antialiased" style="background-color: black;">
+    <div class="px-4 flex flex-col mx-auto max-w-screen-xl">
+        <h2 class="m-6 text-4xl font-extrabold text-center tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">Services</h2>
+        <div class="my-9 flex  flex- flex-warp justify-around">
+            <article class="max-w-xs">
+                <a href="#">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="mb-5 rounded-lg" alt="Image 1">
+                </a>
+                <h2 class="mb-2 text-xl font-bold leading-tight text-white">
+                    <%= link_to "Creation project",  services_path%>
+                </h2>
+                <p class=" mt-4 mb-4 text-white">Creation project security system sesteneble, big project or small project, form it's your satisaction </p>
+                <%= link_to "Read in 2 minutes",  services_path, class: "inline-flex items-center font-medium underline underline-offset-4 text-white text-primary-500 hover:no-underline"%>
+            </article>
+            <article class="max-w-xs">
+                <%= image_tag "cloud", class: "h-auto mb-5 rounded-lg"%>
+                <h2 class="mb-2 text-xl font-bold leading-tight text-white">
+                    <%=link_to "Deployment your app", services_path%>
+                </h2>
+                <p class="mb-4 text-white">Deployment your app, like to use the VPS serveur it's more performonet and your data will be more security</p>
+               <%= link_to "Read in 2 minutes",  services_path, class: "inline-flex items-center font-medium underline underline-offset-4 text-white text-primary-500 hover:no-underline"%>
+            </article>
+            <article class="max-w-xs">
+                <a href="#">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="mb-5 rounded-lg" alt="Image 3">
+                </a>
+                <h2 class="mb-2 text-xl font-bold leading-tight text-white">
+                    <%= link_to "Problem Solving", services_path %>
+                </h2>
+                <p class="mb-4 text-white">So i like solve the problem in devlopment only in ruby on raiks and i can make  youre app more fast like before </p>
+                <%= link_to "Read in 2 minutes",  services_path, class: "inline-flex items-center font-medium underline underline-offset-4 text-white text-primary-500 hover:no-underline"%>
+            </article>
+        </div>
+    </div>
+</section>
