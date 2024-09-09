@@ -10,24 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_10_171549) do
+ActiveRecord::Schema[7.1].define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blogtypes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "genre"
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
-    t.bigint "blogtypes_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["blogtypes_id"], name: "index_posts_on_blogtypes_id"
-  end
-
-  add_foreign_key "posts", "blogtypes", column: "blogtypes_id"
 end

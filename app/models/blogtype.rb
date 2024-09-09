@@ -1,2 +1,0 @@
-class Blogtype < ApplicationRecord
-end
