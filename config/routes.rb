@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'home#index'
+  get 'download_cv', to: 'home#download_cv'
   # resources :blogtypes
   # resources :posts
   resources :services
